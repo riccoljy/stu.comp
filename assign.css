@@ -1,0 +1,120 @@
+body {
+    background-color: #FFB573;
+    width: 50em;
+    text-align: justify;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+a:link { color: #A64E00; }
+a:visited { color: #532700; }
+
+body.getstart > div + div {
+    margin-top: 1em;
+}
+
+body.getstart > img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.longlist > li {
+    margin-bottom: 1em;
+}
+
+.longlist > li > div:first-child {
+    font-weight: bold;
+}
+
+#jscode {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#jscode div:first-child, #jscode div:last-child {
+    font-style: italic;
+    background-color: #FF7800;
+    padding: 0.5em;
+}
+
+#jscode div:nth-child(2) {
+    background-color: white;
+    padding: 0.5em;
+}
+
+pre.terminal {
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border-style: outset;
+    border-color: white;
+    border-width: 2px;
+}
+
+.pseudocode {
+    background-color: #FFC140;
+    color: black;
+    padding: 0.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+div.highlight {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+div.highlight > pre {
+    margin: 0.5em;
+}
+
+span.fqdn {
+    font-weight: bold;
+}
+
+code {
+    background-color: white;
+    color: black;
+    padding: 0.2em;
+}
+
+ol.smallalpha {
+    list-style-type: lower-alpha;
+}
+
+div.mathline {
+    padding-left: 2em;
+}
+
+math[mode="display"] {
+    text-align: left;
+    padding-left: 2em;
+}
+
+span.symbol {
+    font-family: monospace;
+    background-color: #FFC140;
+    padding: 0.2em;
+}
+
+span.incomplete {
+    color: white;
+    background-color: red;
+}
+
+.box {
+    border: 1px black solid;
+    background-color: white;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+span.warning {
+    font-weight: bold;
+    color: red;
+}
