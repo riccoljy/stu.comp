@@ -1,0 +1,201 @@
+/* Base Styles */
+body {
+    font-family: "Sen", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: antiquewhite;
+    /* background: url("../images/pcb.jpg") fixed #fff; */
+    background-size: 100% auto;
+}
+
+/* Layout */
+.container {
+    width: 100%;
+    margin: auto;
+    margin-top: 162px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: #161d49;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    transition: background 0.3s, padding 0.3s;
+    z-index: 2;
+    /* makes the header on top of other components*/
+}
+
+#subtext {
+    transition: opacity 0.3s ease-in-out;
+    margin: 0;
+}
+
+#subtext.hidden {
+    opacity: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #11173a;
+    padding: 0.5rem 0;
+    margin-top: 160px;
+}
+
+nav a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Typography */
+.name {
+    font-size: 36px;
+    padding: 1rem;
+    margin: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+/* Components */
+.block {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.block.small {
+    transform: scale(0.8);
+}
+
+.obstacle-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/obstacle/grp.jpg") no-repeat center center;
+    background-size: cover;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.obstacle-block.small::before {
+    opacity: 0.05;
+}
+
+.project {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    background: #444a6d;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    /* transition: background 0.3s, padding 0.3s; */
+}
+
+.headericons {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.icon {
+    width: 40px;
+    margin-right: 10px;
+
+}
+
+.headericons h1,
+.headericons p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.obstacleContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.obstacleItem img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sections */
+#about {
+    margin-bottom: 5rem;
+}
+
+#projects,
+#contact {
+    /* margin-top: 10rem; */
+    padding: 0;
+}
+
+#about h2,
+#projects h2,
+#contact h2 {
+    margin-top: 0;
+}
+
+#about p,
+#about img,
+#projects p,
+#projects h3,
+#projects h4,
+#projects img,
+#projects ul,
+#contact p,
+#contact ul {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+#about img {
+    float: left;
+    margin-right: 2rem;
+    max-width: 230px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+#projects img {
+    max-height: 240px;
+    width: auto;
+    height: auto;
+}
